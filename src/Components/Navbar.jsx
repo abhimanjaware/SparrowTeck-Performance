@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import logo from "../assets/images/NAV-LOGO.png"
 import { IoMenuOutline, IoCloseOutline } from 'react-icons/io5';
 
 function Navbar() {
@@ -11,7 +12,7 @@ function Navbar() {
           {/* Logo */}
           <div id="logo" className='w-[140px] sm:w-[160px] overflow-hidden mt-[-10px]'>
             <a href="#">
-              <img className='object-cover w-full ' src="src/assets/images/NAV-LOGO.png" alt="Logo" />
+              <img className='object-cover w-full ' src={logo} alt="Logo" />
             </a>
           </div>
 
