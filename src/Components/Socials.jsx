@@ -1,11 +1,11 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
-import i1 from "../assets/images/f-insta-1.png";
-import i2 from "../assets/images/f-insta-2.png";
-import i3 from "../assets/images/f-insta-3.png";
-import i4 from "../assets/images/f-insta-4.png";
-import i5 from "../assets/images/f-insta-5.png";
+import i1 from "../src/assets/images/f-insta-1.png";
+import i2 from "../src/assets/images/f-insta-2.png";
+import i3 from "../src/assets/images/f-insta-3.png";
+import i4 from "../src/assets/images/f-insta-4.png";
+import i5 from "../src/assets/images/f-insta-5.png";
 
 
 gsap.registerPlugin(ScrollTrigger);
