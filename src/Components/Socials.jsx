@@ -110,13 +110,16 @@ imageLinks.forEach((el) => {
         {/* Instagram Images */}
         <div className="overflow-hidden">
           <div className="insta-img flex flex-wrap gap-[10px] w-full h-fit mt-8 relative z-10">
-            {[
-              { href: "https://www.instagram.com/p/CmouOJloVJH/", src: {i1} },
-              { href: "https://www.instagram.com/p/Cdr4ZiprbV6/", src: {i2} },
-              { href: "https://www.instagram.com/p/CqHw5EuNgks/", src: {i3} },
-              { href: "https://www.instagram.com/p/CetHjrfLCIk/?img_index=1", src: {i4} },
-              { href: "https://www.instagram.com/p/CkNFSX5twWa", src: {i5} }
-            ].map((item, idx) => (
+            {
+          [
+            { href: "https://www.instagram.com/p/CmouOJloVJH/", src: i1 },
+            { href: "https://www.instagram.com/p/Cdr4ZiprbV6/", src: i2 },
+            { href: "https://www.instagram.com/p/CqHw5EuNgks/", src: i3 },
+            { href: "https://www.instagram.com/p/CetHjrfLCIk/?img_index=1", src: i4 },
+            { href: "https://www.instagram.com/p/CkNFSX5twWa", src: i5 }
+          ]
+          
+            .map((item, idx) => (
               <a
                 key={idx}
                 href={item.href}
