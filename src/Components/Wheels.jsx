@@ -2,6 +2,11 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import React, {useEffect } from "react";
 gsap.registerPlugin(ScrollTrigger); // register the hook to avoid React version discrepancies 
+import interfacewheel from "../assets/images/interface1wheelimage.jpg"
+import convex from "../assets/images/convex.png"
+import porsche from "../assets/images/porsche.png"
+
+
 
 function Wheels() {
 
@@ -109,7 +114,7 @@ t2.fromTo('#prosche',{
           <div className="wheels-pic mt-8 lg:mt-0 lg:w-[250vw] overflow-hidden">
             <img
               className="w-full h-full object-cover rounded-tl-3xl"
-              src="src/assets/images/interface1wheelimage.jpg"
+              src={interfacewheel}
               alt="wheel" id="wheel-wheelimg"
             />
           </div>
@@ -119,12 +124,12 @@ t2.fromTo('#prosche',{
         <div className="WHEEL-PNG relative w-full flex flex-col  items-end ">
           <img
             className="hidden  w-[80%] sm:w-[60%]  lg:block lg:w-[45%] mt-[2rem] lg:mx-auto mx-auto sm:mt-[-3rem] lg:mt-[-3rem] "
-            src="src/assets/images/convex.png"
+            src={convex}
             alt="wheelpng" id="convex"
           />
           <img
             className="porschediv   hidden   w-[60%] sm:w-[40%]  lg:block lg:w-[50%] lg:mx-auto mx-auto mt-[-4rem] sm:mt-[-5rem]  "
-            src="src/assets/images/porsche.png"
+            src={porsche}
             alt="wheelpng" id="prosche"
           />
         </div>

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
-
+import heroimg from "../assets/images/heroimg.jpg";
 function Hero() {
   const heroRef = useRef(null);
   const headingRef = useRef(null);
@@ -76,7 +76,7 @@ function Hero() {
         ref={bgImageRef}
         style={{ transform: 'scale(1.1)' }}
         className="h-full w-full object-cover object-center opacity-60 absolute inset-0 z-0"
-        src="/src/assets/images/landing-hero-poster.f0a6aa9 (1).jpg"
+        src={heroimg}
         alt="Hero Background"
       />
 

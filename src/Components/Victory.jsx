@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
+import victory from "../assets/images/victory.webp";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -57,7 +58,7 @@ function Victory() {
             <div className="shape absolute bg-[#FAFBFC] h-[8vh] left-[-60%] top-0 w-full -skew-x-56 z-10"></div>
             <img
               className="object-cover h-full w-full object-center z-0"
-              src="src/assets/images/victory.webp"
+              src={victory}
               alt="Victory"
             />
           </div>

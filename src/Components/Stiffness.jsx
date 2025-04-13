@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import redbg from "../assets/images/redb.jpeg"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -59,7 +60,7 @@ function Stiffness() {
             >
               With big power of modern bikes comes a lot of force on wheels. Our revolutionary
               <span className="text-black font-bold"> three-component composite, dry forging and racing design</span>
-              provide high torsional, lateral, radial stiffness and great impact resistance.
+               provide high torsional, lateral, radial stiffness and great impact resistance.
             </p>
             <p
               ref={para2Ref}
@@ -79,7 +80,7 @@ function Stiffness() {
             <img
               ref={imageRef}
               className="w-[90%] hidden lg:block lg:w-[80%] object-cover rounded-md"
-              src="src/assets/images/redb.jpeg"
+              src={redbg}
               alt="background"
             />
 

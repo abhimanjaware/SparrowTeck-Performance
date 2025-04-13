@@ -1,6 +1,12 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
+import i1 from "../assets/images/f-insta-1.png";
+import i2 from "../assets/images/f-insta-2.png";
+import i3 from "../assets/images/f-insta-3.png";
+import i4 from "../assets/images/f-insta-4.png";
+import i5 from "../assets/images/f-insta-5.png";
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -105,11 +111,11 @@ imageLinks.forEach((el) => {
         <div className="overflow-hidden">
           <div className="insta-img flex flex-wrap gap-[10px] w-full h-fit mt-8 relative z-10">
             {[
-              { href: "https://www.instagram.com/p/CmouOJloVJH/", src: "src/assets/images/f-insta-1.png" },
-              { href: "https://www.instagram.com/p/Cdr4ZiprbV6/", src: "src/assets/images/f-insta-2.png" },
-              { href: "https://www.instagram.com/p/CqHw5EuNgks/", src: "src/assets/images/f-insta-3.png" },
-              { href: "https://www.instagram.com/p/CetHjrfLCIk/?img_index=1", src: "src/assets/images/f-insta-4.png" },
-              { href: "https://www.instagram.com/p/CkNFSX5twWa", src: "src/assets/images/f-insta-5.png" }
+              { href: "https://www.instagram.com/p/CmouOJloVJH/", src: {i1} },
+              { href: "https://www.instagram.com/p/Cdr4ZiprbV6/", src: {i2} },
+              { href: "https://www.instagram.com/p/CqHw5EuNgks/", src: {i3} },
+              { href: "https://www.instagram.com/p/CetHjrfLCIk/?img_index=1", src: {i4} },
+              { href: "https://www.instagram.com/p/CkNFSX5twWa", src: {i5} }
             ].map((item, idx) => (
               <a
                 key={idx}

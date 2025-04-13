@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import gsap from 'gsap';
 // import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/all'
-
+import designimg from "../assets/images/designinfo1.webp"
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -55,7 +55,7 @@ function Design() {
     <div ref={designRef} className="relative h-[100vh] w-full overflow-hidden">
       {/* Background Image */}
       <img
-        src="src/assets/images/designinfo1.webp"
+        src={designimg}
         alt="design"
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
       />

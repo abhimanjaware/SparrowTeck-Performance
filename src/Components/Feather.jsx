@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import feathertyre from "../assets/images/lightasfeatherimg.webp"
+import bg from "../assets/images/redb.jpeg"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -97,7 +99,7 @@ function Feather() {
           <div className="relative h-[60vh] sm:h-[85vh] w-full lg:w-[60%] flex justify-center items-center">
             <img
               className="h-[80%] w-[90%] object-cover rounded-md"
-              src="src/assets/images/redb.jpeg"
+              src={bg}
               alt="bg"
             />
             <span className="hidden sm:block absolute left-4 sm:left-6 md:left-8 lg:left-[-2rem] top-1/2 -translate-y-1/2 tracking-widest font-[Bebas_Neue] text-[6vw] sm:text-[5vw] md:text-[3.5vw] lg:text-[40px] font-bold text-zinc-300 -rotate-90 z-20 whitespace-nowrap"
@@ -108,31 +110,11 @@ function Feather() {
 
             <img
               className="absolute wheel-img w-[60%] sm:w-[70%] lg:w-[50%] ml-0 sm:ml-8 lg:ml-[28rem] z-10"
-              src="src/assets/images/lightasfeatherimg.webp"
+              src={feathertyre}
               alt="tyre"
             />
 
-            {/* 🌟 Aligned Feathers for Mobile */}
-            {/* <img
-              className="feather-float hidden absolute w-[13%] top-[25%] left-[18%] rotate-[30deg] z-20"
-              src="https://www.rotobox-wheels.com/_nuxt/img/feather6.efd5cbe.png"
-              alt="f1"
-            />
-            <img
-              className="feather-float hidden absolute w-[12%] bottom-[18%] left-[28%] rotate-[60deg] z-20"
-              src="https://www.rotobox-wheels.com/_nuxt/img/feather2.09d6ea2.png"
-              alt="f2"
-            />
-            <img
-              className="feather-float hidden absolute w-[12%] top-[32%] right-[26%] rotate-[-50deg] z-20"
-              src="https://www.rotobox-wheels.com/_nuxt/img/feather3.4f20480.png"
-              alt="f3"
-            />
-            <img
-              className="feather-float hidden absolute w-[10%] bottom-[20%] right-[22%] rotate-[120deg] z-20"
-              src="https://www.rotobox-wheels.com/_nuxt/img/feather5.1357efe.png"
-              alt="f4"
-            /> */}
+          
           </div>
 
           {/* Right Section */}

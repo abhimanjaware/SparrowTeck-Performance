@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from "../assets/images/NAV-LOGO.png"
 
 function Footer() {
   return (
@@ -12,7 +13,7 @@ function Footer() {
         {/* Logo */}
         <div className="footer-logo overflow-hidden w-[150px] mb-4">
           <a href="#">
-            <img className="h-[130px] w-[250px]" src="src/assets/images/NAV-LOGO.png" alt="LOGO" />
+            <img className="h-[130px] w-[250px]" src={logo} alt="LOGO" />
           </a>
         </div>
 
