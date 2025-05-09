@@ -24,7 +24,7 @@ function App() {
     {!loading && (
       <div className='bg-[#FAFBFC] '>
      
-     <Navbar/>
+     {/* <Navbar/> */}
      <Hero/>
      <Wheels/>
      <Design/>
